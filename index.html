@@ -10,10 +10,17 @@
 </head>
 <body class="bg-gray-900 text-white font-[Inter]">
   <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 relative overflow-hidden">
+    <img src="pfp.jpg" class="rounded-full w-40 h-40 mb-6 border-4 border-indigo-600" alt="Utkarsh's Picture" />
     <h1 class="text-5xl sm:text-6xl font-extrabold mb-4">Hi, I'm Utkarsh Mangal 👋</h1>
     <p class="text-xl sm:text-2xl max-w-xl">Math • Code • Meme — Let's make the web a little smarter and a lot funnier.</p>
     <a href="#projects" class="mt-8 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-lg font-semibold rounded-full shadow-lg transition">View Projects</a>
+    <!-- Floating Emojis -->
+    <div class="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
+      <div class="animate-bounce absolute text-3xl" style="top: 20%; left: 10%;">📐</div>
+      <div class="animate-ping absolute text-3xl" style="top: 50%; left: 70%;">🤖</div>
+      <div class="animate-bounce absolute text-3xl" style="top: 80%; left: 30%;">😂</div>
+    </div>
   </section>
 
   <!-- About Section -->
@@ -28,7 +35,6 @@
   <section id="projects" class="py-20 px-6 bg-gray-800">
     <h2 class="text-4xl font-bold mb-6 text-center">Projects</h2>
     <div class="grid md:grid-cols-2 gap-8">
-      <!-- Placeholder Cards -->
       <div class="bg-gray-700 rounded-xl p-6 shadow-md">
         <h3 class="text-xl font-semibold mb-2">Project Title</h3>
         <p class="text-gray-300">Short project description goes here.</p>
@@ -51,7 +57,20 @@
   <!-- Blog Section -->
   <section id="blogs" class="py-20 px-6 max-w-4xl mx-auto">
     <h2 class="text-4xl font-bold mb-6">Blogs</h2>
-    <p class="text-gray-400">Coming soon...</p>
+    <div class="grid gap-6">
+      <div class="bg-gray-800 rounded-lg p-6">
+        <h3 class="text-xl font-semibold">Blog Title Placeholder</h3>
+        <p class="text-gray-400 mt-2">Short summary of blog content. Replace this with your writing!</p>
+        <a href="#" class="text-indigo-400 hover:underline mt-2 inline-block">Read more →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meme of the Day -->
+  <section id="meme" class="py-20 px-6 bg-gray-700 text-center">
+    <h2 class="text-3xl font-bold mb-4">Meme of the Day 🤡</h2>
+    <p class="text-gray-300">"Why was the math book sad? Because it had too many problems."</p>
+    <p class="mt-2 text-sm text-gray-500">(Replace this daily with a fresh one!)</p>
   </section>
 
   <!-- Contact Section -->
@@ -63,7 +82,7 @@
       <a href="https://www.instagram.com/_utkarsh_mangal/" target="_blank" class="hover:text-indigo-400">Instagram</a>
       <a href="#" class="hover:text-indigo-400">Twitter</a>
     </div>
-    <p class="mt-6 text-gray-400">Resume: <a href="#" class="underline">View PDF</a></p>
+    <p class="mt-6 text-gray-400">Resume: <a href="resume.pdf" class="underline">View PDF</a></p>
   </section>
 
   <!-- Footer -->
